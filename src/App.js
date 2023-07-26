@@ -30,6 +30,7 @@ function App() {
           />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
+          <Route path="chitchat" element={<Login />} />
         </Route>
       </Routes>
     </BrowserRouter>
