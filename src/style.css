@@ -1,5 +1,5 @@
 .formContainer {
-  background-color: #858687;
+  background-color: #f0f2f5;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -7,49 +7,52 @@
 }
 
 .formContainer .formWrapper {
-  background-color: rgb(15, 12, 12);
-  padding: 20px 60px;
-  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
 }
 
 .formContainer .formWrapper .logo {
-  color: #f8ae0f;
+  color: #ff6600;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 .formContainer .formWrapper .title {
-  color: #f8ae0f;
-  font-size: 12px;
+  color: #555555;
+  font-size: 14px;
 }
 
 .formContainer .formWrapper form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 .formContainer .formWrapper form input {
   padding: 15px;
-  border: none;
-  width: 250px;
-  border-bottom: 1px solid #f8ae0f;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
 }
 
 .formContainer .formWrapper form input::placeholder {
-  color: #afafaf;
+  color: #999999;
 }
 
 .formContainer .formWrapper form button {
-  background-color: #f8ae0f;
+  background-color: #ff6600;
   color: white;
-  padding: 10px;
+  padding: 15px;
   font-weight: bold;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -57,8 +60,8 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #f8ae0f;
-  font-size: 12px;
+  color: #555555;
+  font-size: 14px;
   cursor: pointer;
 }
 
@@ -67,14 +70,14 @@
 }
 
 .formContainer .formWrapper p {
-  color: #f8ae0f;
-  font-size: 12px;
+  color: #555555;
+  font-size: 14px;
   margin-top: 10px;
 }
 
 .formContainer .formWrapper .link {
-  color: whitesmoke;
-  font-size: 12px;
+  color: #007bff;
+  font-size: 14px;
   margin-top: 10px;
 }
 
@@ -92,55 +95,60 @@
 }
 
 .home .container .sidebar {
-  flex: 0.5;
-  background-color: rgb(15, 12, 12);
+  flex: 0.4;
+  background-color: #333333;
   position: relative;
+  color: white;
 }
 
 .home .container .sidebar .navbar {
   display: flex;
   align-items: center;
-  background-color: rgb(15, 12, 12);
-  height: 50px;
-  padding: 10px;
+  background-color: #333333;
+  height: 60px;
+  padding: 0 20px;
   justify-content: space-between;
-  color: #f8ae0f;
 }
 
 .home .container .sidebar .navbar .logo {
   font-weight: bold;
-  font-size: larger;
+  font-size: 20px;
 }
 
 .home .container .sidebar .navbar .user {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
 .home .container .sidebar .navbar .user img {
-  background-color: whitesmoke;
-  height: 30px;
-  width: 30px;
+  background-color: #f0f0f0;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
 }
 
 .home .container .sidebar .navbar .user button {
-  background-color: #f8ae0f;
+  background-color: #ff6600;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
   cursor: pointer;
 }
 
 .home .container .sidebar .navbar .user span {
-  color: #f8ae0f;
+  color: white;
   font-weight: bold;
-  font-size: large;
+  font-size: 16px;
 }
 
 .home .container .sidebar .search {
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid #555555;
 }
 
 .home .container .sidebar .search .searchForm {
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 .home .container .sidebar .search .searchForm input {
@@ -148,6 +156,9 @@
   border: none;
   color: white;
   outline: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
 }
 
 .home .container .sidebar .search .searchForm input::placeholder {
@@ -155,16 +166,16 @@
 }
 
 .home .container .sidebar .userChat {
-  padding: 10px;
+  padding: 15px 20px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  color: white;
+  gap: 15px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .home .container .sidebar .userChat:hover {
-  background-color: rgb(72, 72, 72);
+  background-color: #555555;
 }
 
 .home .container .sidebar .userChat img {
@@ -180,27 +191,30 @@
 }
 
 .home .container .sidebar .userChat .userChatInfo p {
-  font-size: 12px;
+  font-size: 14px;
+  color: #dddddd;
 }
 
 .home .container .chat {
   flex: 2;
+  display: flex;
+  flex-direction: column;
 }
 
 .home .container .chat .chatInfo {
-  height: 50px;
-  background-color: #f8ae0f;
+  height: 60px;
+  background-color: #ff6600;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
-  color: black;
-  font-weight: bolder;
+  padding: 0 20px;
+  color: white;
+  font-weight: bold;
 }
 
 .home .container .chat .chatIcons {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 .home .container .chat .chatIcons img {
@@ -209,10 +223,10 @@
 }
 
 .home .container .chat .messages {
-  background-color: white;
-  padding: 10px;
-  height: calc(100% - 160px);
-  overflow: scroll;
+  background-color: #f8f8f8;
+  padding: 20px;
+  height: calc(100% - 120px);
+  overflow-y: auto;
 }
 
 .home .container .chat .messages .message {
@@ -243,15 +257,16 @@
 }
 
 .home .container .chat .messages .message .messageContent p {
-  background-color: #f8ae0f;
+  background-color: #ff6600;
   padding: 10px 20px;
-  border-radius: 0px 10px 10px 10px;
+  border-radius: 15px;
   max-width: max-content;
-  color: black;
+  color: white;
 }
 
 .home .container .chat .messages .message .messageContent img {
   width: 50%;
+  border-radius: 10px;
 }
 
 .home .container .chat .messages .message.owner {
@@ -263,18 +278,19 @@
 }
 
 .home .container .chat .messages .message.owner .messageContent p {
-  background-color: black;
-  color: #f8ae0f;
-  border-radius: 10px 0px 10px 10px;
+  background-color: #333333;
+  color: #ff6600;
+  border-radius: 15px;
 }
 
 .home .container .chat .input {
-  height: 50px;
-  background-color: #f8ae0f;
-  padding: 10px;
+  height: 60px;
+  background-color: #ffffff;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-top: 1px solid #dddddd;
 }
 
 .home .container .chat .input input {
@@ -282,25 +298,26 @@
   border: none;
   outline: none;
   background-color: transparent;
-  font-size: 18px;
+  font-size: 16px;
+  padding: 10px;
 }
 
 .home .container .chat .input input::placeholder {
-  color: black;
+  color: #888888;
 }
 
 .home .container .chat .input .send {
   display: flex;
   align-items: center;
   gap: 10px;
-
 }
 
 .home .container .chat .input .send button {
   border: none;
   padding: 10px 15px;
-  color: #f8ae0f;
-  background-color: black;
+  color: white;
+  background-color: #ff6600;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: large;
+  font-size: 16px;
 }
