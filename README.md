@@ -1,1 +1,1 @@
-# chitchat
+Developed chat application, achieving real time end to end messaging with access to past conversation. Implemented file sharing feature for all type of media including PDF, Image, Video and Audio. Google or Email-Password authentication and saving chat history and file shared using Firebase Created voice assistant for faster typing.
