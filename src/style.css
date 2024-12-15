@@ -1,0 +1,345 @@
+.formContainer {
+  background-color: #f0f2f5;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formContainer .formWrapper {
+  background-color: #ffffff;
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.formContainer .formWrapper .logo {
+  color: #ff6600;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.formContainer .formWrapper .title {
+  color: #555555;
+  font-size: 14px;
+}
+
+.formContainer .formWrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formContainer .formWrapper form input {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.formContainer .formWrapper form input::placeholder {
+  color: #999999;
+}
+
+.formContainer .formWrapper form button {
+  background-color: #ff6600;
+  color: white;
+  padding: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formContainer .formWrapper form label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #555555;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.formContainer .formWrapper form label img {
+  width: 32px;
+}
+
+.formContainer .formWrapper p {
+  color: #555555;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.formContainer .formWrapper .link {
+  color: #007bff;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.orSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.googleSignInButton {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.googleSignInButton:hover {
+  background-color: #ff6600;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.home .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.home .container .sidebar {
+  flex: 0.4;
+  background-color: #333333;
+  position: relative;
+  color: white;
+}
+
+.home .container .sidebar .navbar {
+  display: flex;
+  align-items: center;
+  background-color: #333333;
+  height: 60px;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.home .container .sidebar .navbar .logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.home .container .sidebar .navbar .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home .container .sidebar .navbar .user img {
+  background-color: #f0f0f0;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.home .container .sidebar .navbar .user button {
+  background-color: #ff6600;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.home .container .sidebar .navbar .user span {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.home .container .sidebar .search {
+  border-bottom: 1px solid #555555;
+}
+
+.home .container .sidebar .search .searchForm {
+  padding: 10px 20px;
+}
+
+.home .container .sidebar .search .searchForm input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.home .container .sidebar .search .searchForm input::placeholder {
+  color: lightgray;
+}
+
+.home .container .sidebar .userChat {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home .container .sidebar .userChat:hover {
+  background-color: #555555;
+}
+
+.home .container .sidebar .userChat img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.home .container .sidebar .userChat .userChatInfo span {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.home .container .sidebar .userChat .userChatInfo p {
+  font-size: 14px;
+  color: #dddddd;
+}
+
+.home .container .chat {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.home .container .chat .chatInfo {
+  height: 60px;
+  background-color: #ff6600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.home .container .chat .chatIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.home .container .chat .chatIcons img {
+  height: 24px;
+  cursor: pointer;
+}
+
+.home .container .chat .messages {
+  background-color: #f8f8f8;
+  padding: 20px;
+  height: calc(100% - 120px);
+  overflow-y: auto;
+}
+
+.home .container .chat .messages .message {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.home .container .chat .messages .message .messageInfo {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  font-weight: 300;
+}
+
+.home .container .chat .messages .message .messageInfo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.home .container .chat .messages .message .messageContent {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home .container .chat .messages .message .messageContent p {
+  background-color: #ff6600;
+  padding: 10px 20px;
+  border-radius: 15px;
+  max-width: max-content;
+  color: white;
+}
+
+.home .container .chat .messages .message .messageContent img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.home .container .chat .messages .message.owner {
+  flex-direction: row-reverse;
+}
+
+.home .container .chat .messages .message.owner .messageContent {
+  align-items: flex-end;
+}
+
+.home .container .chat .messages .message.owner .messageContent p {
+  background-color: #333333;
+  color: #ff6600;
+  border-radius: 15px;
+}
+
+.home .container .chat .input {
+  height: 60px;
+  background-color: #ffffff;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #dddddd;
+}
+
+.home .container .chat .input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.home .container .chat .input input::placeholder {
+  color: #888888;
+}
+
+.home .container .chat .input .send {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home .container .chat .input .send button {
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  background-color: #ff6600;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
